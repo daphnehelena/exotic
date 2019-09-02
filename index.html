@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Início | Exotic Pets</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="detalhes/lotipo.png" class="logo" alt="logotipo da empresa">
+        <nav class="menu push">
+            <a href="login.html"> Usuário </a>
+            <a href="contato.html"> Contato</a>
+            <a href="sobre.html"> Quem somos</a>
+            <a href="adote.html"> Adote um pet </a>
+            <a href="produto.html"> Produtos</a>
+        </nav>
+    </header>
+    <div class="clear"></div>
+    <main>
+        <section class="secao">
+            <div class="banner">
+                <img src="imagens/imagens_index/porquinho_india.jpg" alt="Banner de aniversário da empresa">
+            </div>
+
+            <div>
+                <hr class="hr-e">
+                <hr class="hr-d">
+                <div class="favorito">
+                    <h1>Favoritos do Mês</h1>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="item">
+                <div class="imagem">
+                    <img src="imagens/imagens_index/arara.jpg" alt="Foto de uma Arara Canindé">
+                    <p>
+                       <strong>Aves</strong> 
+                    </p>
+                </div>
+
+                <div class="imagem">
+                    <img src="imagens/imagens_index/reptil.jpg" alt="Foto de um réptil">
+                    <p>
+                        <strong>Répteis</strong> 
+                    </p>
+                </div>
+
+                <div class="imagem">
+                    <img src="imagens/imagens_index/cavalo_marinho.jpg" alt="Foto de um cavalo marinho branco">
+                    <p>
+                        <strong>Aquáticos</strong> 
+                    </p>
+                </div>
+            </div>
+
+            <div class="form">
+                <section>
+                    <h2>
+                        Hey! receba nossa Newsletter para ficar por dentro das novidades!
+                    </h2>
+                    <p>Receba promoções esclusivas e descontos da Exotic Pets. </p>
+                    <form id="news">
+                        <div class="info" >
+                            <label for="nome" id="Nome"></label>
+                            <input type="text" id="nome" placeholder="Digite seu nome completo.">
+                            <div class="news">
+                                <img src="detalhes/jornal.png" alt="illustração de um jornal">
+                            </div>
+                            <label for="email" id="e-mail"></label>
+                            <input type="email" id="email" placeholder="Digite seu e-mail."> <br>
+                            <div class="BOTAO">
+                                <button type="submit"> Cadastrar</button><br>
+                            </div>
+                            <p id="resultado"></p>
+                        </div>
+                    </form>
+                    
+                    <script>
+                        let f = document.querySelector("#news")
+                        f.addEventListener("submit", function(event){
+                            event.preventDefault()
+                            let nome= document.querySelector('#nome')
+                            let email = document.querySelector('#email')
+                    
+                            if(!nome.value)
+                            {
+                                resultado.textContent="O campo Nome é Obrigado"
+                                resultado.style.color='red'
+                                nome.focus()
+                                return
+                            }  
+                            if(!email.value)
+                            {
+                                resultado.textContent="O campo email é obrigatorio"
+                                resultado.style.color='red'
+                                email.focus()
+                                return
+                            }
+                            resultado.textContent='Cadastro feito com sucesso, aguarde nossa Newsletter'
+                            resultado.style.color='white'
+                        })
+                        
+                        </script>
+                </section>
+            </div>
+
+          
+        </section>
+    </main>
+
+    <footer>
+        <div class="itens-rodape">
+            <h2> A Empresa</h2>
+            
+                <a href="index.html">Sede</a>
+                <br> <a href="index.html"> CNPJ</a>
+                <br> <a href="index.html">Trabalhe conosco</a>
+                <br> <a href="index.html">Projetos</a>
+                <br> <a href="index.html">Eventos</a>
+                <br> <a href ="index.html">Cupom de Desconto</a>
+
+            
+
+        </div>
+        <div class="itens-rodape">
+            <h2> Ajuda e Suporte</h2>
+            
+                <a href="index.html">Central de Atendimento</a>
+                <br> <a href ="index.html">Como comprar</a>
+                <br> <a href = "index.html">Sistema de Adoções</a>
+                <br> <a href="index.html">Sistema de Compras</a>
+                <br> <a href="index.html">Trocas e Devoluções</a>
+                <br> <a href="index.html">Política de Promoção</a>
+
+            
+
+        </div>
+        <div class="itens-rodape">
+            <h2> Sac Exotics Pets</h2>
+            
+                <a href="index.html">(11)66666-6666 - Osasco-SP</a>
+                <br> <a href="index.html">(16)66666-6666 - Araraquara-SP </a> 
+                <br> <a href="index.html">(16)66666-6666 - Ribeirão Preto-SP </a>
+                <br> <a href="index.html">(16)66666-6666- Taquaritinga-SP</a>
+                <br> <a href="index.html">sac@exoticpets.com.br</a>
+                <br> <a href="index.html">De segunda à sábado das 9h00 às 21h00 </a>
+
+            
+
+        </div>
+        <div class="itens-rodape">
+            <h2> Meios de Pagamento</h2>
+            <img src="detalhes/mastercartao.png" alt="ícone do cartão Master Card">
+            <img src="detalhes/visacartao.png" alt="ícone do cartão Visa">
+            <img src="detalhes/pay.png" alt="ícone do Paypal">
+        </div>
+        <div class="icones">
+            <a href="https://facebook.com" target="blamk"><img src="detalhes/facebook.png"
+                    alt="ícone do facebook"></a>
+            <a href="https://www.instagram.com" target="blamk"><img src="detalhes/instagram.png"
+                    alt="ícone do instagram"></a>
+            <a href="https://twitter.com/" target="blamk"><img src="detalhes/twitter.png"
+                    alt="ícone do twitter"></a>
+            <a href="https://gmail.com" target="blamk"><img src="detalhes/gmail.png" alt="ícone do gmail"></a>
+        </div>
+      
+    </footer>
+
+</body>
+
+</html>
